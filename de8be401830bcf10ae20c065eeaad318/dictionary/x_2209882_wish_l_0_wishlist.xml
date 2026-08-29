@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="544d2405830bcf10ae20c065eeaad36e" label="wishlist" max_length="40" name="x_2209882_wish_l_0_wishlist" type="collection">
+        <element label="Item" mandatory="true" max_length="40" name="item" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Requester" mandatory="true" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <element label="Deleted At" max_length="40" name="deleted_at" type="glide_date_time"/>
+        <index name="index">
+            <element name="requester"/>
+        </index>
+    </element>
+</database>
